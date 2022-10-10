@@ -15,7 +15,6 @@ void Zadacha47()
     double[,] array = new double[m, n];
     FillArray(array);
     PrintArray(array);
-   
 }
 
 void PrintArray(double[,] array)
@@ -51,7 +50,6 @@ void Zadacha50()
     // значение этого элемента или же указание, что такого элемента нет.
 
     Console.Clear();
-
     Random random = new Random();
     int rows = random.Next(1, 11);
     int columns = random.Next(1, 11);
@@ -59,7 +57,6 @@ void Zadacha50()
     FillArrayInt(arrayNew);
     PrintArrayNew(arrayNew);
     ElementValue(arrayNew, rows, columns);
-   
 }
 void FillArrayInt(int[,] array)
 {
@@ -86,7 +83,7 @@ void PrintArrayNew(int[,] array)
 }
 void ElementValue(int[,] arr, int rows, int columns)
 {
-     Console.Write("Введите индекс строки: ");
+    Console.Write("Введите индекс строки: ");
     int i = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите индекс столбца: ");
     int j = Convert.ToInt32(Console.ReadLine());
